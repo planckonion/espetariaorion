@@ -1,21 +1,21 @@
 const S: [number, number, number, string?][] = [
-  [30, 20, 2.0, "#FF8C42"], // Betelgeuse (ombro esquerdo, laranja)
-  [70, 20, 1.6],            // Bellatrix (ombro direito)
-  [40, 45, 1.6],            // Alnitak (cinturão)
-  [50, 45, 1.8],            // Alnilam (cinturão, central)
-  [60, 45, 1.6],            // Mintaka (cinturão)
-  [47, 60, 1.2, "#CFE3FF"], // Espada 1
-  [50, 70, 1.4, "#CFE3FF"], // Espada 2 (central)
-  [53, 80, 1.2, "#CFE3FF"], // Espada 3
-  [35, 105, 1.6],           // Saiph (pé esquerdo)
-  [65, 105, 2.0, "#CFE3FF"],// Rigel (pé direito, azul-branco)
+  [30, 22, 2.2, "#FF8C42"], // Betelgeuse (ombro esquerdo, laranja-avermelhado)
+  [70, 22, 1.8, "#CFE3FF"], // Bellatrix (ombro direito, azul-branco)
+  [40, 48, 1.6],            // Alnitak (cinturão, esquerda)
+  [50, 48, 1.8],            // Alnilam (cinturão, centro)
+  [60, 48, 1.6],            // Mintaka (cinturão, direita)
+  [47, 62, 1.3, "#CFE3FF"], // Espada 1 (acima)
+  [50, 72, 1.5, "#CFE3FF"], // Espada 2 (central, abaixo do cinturão)
+  [53, 82, 1.3, "#CFE3FF"], // Espada 3 (abaixo)
+  [35, 108, 1.8],           // Saiph (pé esquerdo)
+  [65, 108, 2.2, "#CFE3FF"],// Rigel (pé direito, azul-branco brilhante)
 ];
 const L: [number, number][] = [
   [0, 2], // Betelgeuse - Alnitak
   [1, 4], // Bellatrix - Mintaka
   [2, 3], [3, 4], // Cinturão (3 estrelas alinhadas)
-  [3, 6], // Alnilam - Espada
-  [5, 6], [6, 7], // Espada vertical
+  [3, 6], // Alnilam - Espada central
+  [5, 6], [6, 7], // Espada vertical (3 estrelas)
   [0, 8], // Betelgeuse - Saiph
   [1, 9], // Bellatrix - Rigel
 ];
