@@ -1,14 +1,14 @@
 const S: [number, number, number, string?][] = [
-  [30, 30, 2.0, "#FF8C42"], // Betelgeuse (ombro esquerdo, laranja)
-  [70, 30, 1.6],            // Bellatrix (ombro direito)
-  [40, 55, 1.6],            // Alnitak (cinturão)
-  [50, 55, 1.8],            // Alnilam (cinturão, central)
-  [60, 55, 1.6],            // Mintaka (cinturão)
-  [47, 68, 1.2, "#CFE3FF"], // Espada 1
-  [50, 78, 1.4, "#CFE3FF"], // Espada 2 (central)
-  [53, 88, 1.2, "#CFE3FF"], // Espada 3
-  [35, 108, 1.6],           // Saiph (pé esquerdo)
-  [65, 108, 2.0, "#CFE3FF"],// Rigel (pé direito, azul-branco)
+  [30, 20, 2.0, "#FF8C42"], // Betelgeuse (ombro esquerdo, laranja)
+  [70, 20, 1.6],            // Bellatrix (ombro direito)
+  [40, 45, 1.6],            // Alnitak (cinturão)
+  [50, 45, 1.8],            // Alnilam (cinturão, central)
+  [60, 45, 1.6],            // Mintaka (cinturão)
+  [47, 60, 1.2, "#CFE3FF"], // Espada 1
+  [50, 70, 1.4, "#CFE3FF"], // Espada 2 (central)
+  [53, 80, 1.2, "#CFE3FF"], // Espada 3
+  [35, 105, 1.6],           // Saiph (pé esquerdo)
+  [65, 105, 2.0, "#CFE3FF"],// Rigel (pé direito, azul-branco)
 ];
 const L: [number, number][] = [
   [0, 2], // Betelgeuse - Alnitak
