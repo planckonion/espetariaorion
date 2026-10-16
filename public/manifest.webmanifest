@@ -1,0 +1,11 @@
+{
+  "name": "Espetaria Orion",
+  "short_name": "Orion",
+  "lang": "pt-BR",
+  "description": "Cardápio, pedidos e reservas da Espetaria Orion — O sabor da brasa.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050914",
+  "theme_color": "#070D1F",
+  "icons": [{ "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }]
+}
