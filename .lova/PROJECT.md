@@ -11,7 +11,7 @@ Espetaria Orion — site de espetaria/brasa em Uberlândia/MG (React 19 + TanSta
 - Foto.tsx exibe Orion como placeholder quando img() retorna null.
 
 ## Mapa de arquivos
-- src/components/Orion.tsx — símbolo da constelação (corrigido com base na imagem de referência) + Divisor.
+- src/components/Orion.tsx — símbolo da constelação (reescrito com base na imagem de referência public/orion-referencia.png) + Divisor.
 - src/components/Foto.tsx — imagem com fallback Orion.
 - src/components/Shell.tsx, Rodape.tsx — header/rodapé com Orion.
 - src/routes/index.tsx, cardapio.tsx, reservar.tsx, plaquinha.tsx — páginas que usam Orion.
@@ -22,7 +22,7 @@ Espetaria Orion — site de espetaria/brasa em Uberlândia/MG (React 19 + TanSta
 - public/orion-referencia.png — imagem de referência da constelação enviada pelo usuário.
 
 ## Decisões do usuário
-- Símbolo de Orion deve refletir a constelação real (cinturão de 3 estrelas alinhadas, ombros Betelgeuse/Bellatrix, pés Saiph/Rigel, espada).
+- Símbolo de Orion deve refletir exatamente a imagem de referência: ombros Betelgeuse (esquerda, laranja) e Bellatrix (direita, azul-branco), cinturão com 3 estrelas alinhadas (Alnitak, Alnilam, Mintaka), espada vertical com 3 estrelas abaixo do cinturão, pés Saiph (esquerda) e Rigel (direita, azul-branco brilhante), linhas conectando ombros-cinturão-pés.
 
 ## Pendências
 - [ ] Adicionar fotos dos itens do cardápio em assets/ (ou gerar placeholders) — depende do usuário enviar as imagens.
