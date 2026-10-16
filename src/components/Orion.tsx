@@ -1,18 +1,23 @@
 const S: [number, number, number, string?][] = [
-  [30, 20, 1.6], [42, 24, 1.4], [50, 20, 1.6], [62, 24, 1.4], [70, 20, 1.6],
-  [38, 42, 1.8, "#FFB27A"], [50, 44, 2.2, "#FFB27A"], [62, 42, 1.8],
-  [44, 66, 1.4], [50, 68, 1.4], [56, 66, 1.4],
-  [40, 92, 1.6], [50, 96, 2.0, "#CFE3FF"], [60, 92, 1.6],
-  [30, 120, 1.2], [70, 120, 1.2],
+  [30, 30, 2.0, "#FF8C42"], // Betelgeuse (ombro esquerdo, laranja)
+  [70, 30, 1.6],            // Bellatrix (ombro direito)
+  [40, 55, 1.6],            // Alnitak (cinturão)
+  [50, 55, 1.8],            // Alnilam (cinturão, central)
+  [60, 55, 1.6],            // Mintaka (cinturão)
+  [47, 68, 1.2, "#CFE3FF"], // Espada 1
+  [50, 78, 1.4, "#CFE3FF"], // Espada 2 (central)
+  [53, 88, 1.2, "#CFE3FF"], // Espada 3
+  [35, 108, 1.6],           // Saiph (pé esquerdo)
+  [65, 108, 2.0, "#CFE3FF"],// Rigel (pé direito, azul-branco)
 ];
 const L: [number, number][] = [
-  [0, 1], [1, 2], [2, 3], [3, 4],
-  [0, 5], [4, 7],
-  [5, 6], [6, 7],
-  [5, 8], [7, 10],
-  [8, 9], [9, 10],
-  [8, 11], [10, 12],
-  [11, 13], [12, 14],
+  [0, 2], // Betelgeuse - Alnitak
+  [1, 4], // Bellatrix - Mintaka
+  [2, 3], [3, 4], // Cinturão (3 estrelas alinhadas)
+  [3, 6], // Alnilam - Espada
+  [5, 6], [6, 7], // Espada vertical
+  [0, 8], // Betelgeuse - Saiph
+  [1, 9], // Bellatrix - Rigel
 ];
 
 export function Orion({ className = "", animado = true, mini = false }: { className?: string; animado?: boolean; mini?: boolean }) {
