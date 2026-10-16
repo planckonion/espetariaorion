@@ -1,6 +1,6 @@
 import { brl } from "@/data/negocio";
 
-export type Linha = { id: string; nome: string; preco: number | null; qtd: number; obs?: string };
+export type Linha = { id: string; nome: string; preco: number | null; qtd: number; obs?: string | undefined };
 export type Checkout = {
   nome: string; tipo: string; endereco?: string; bairro?: string; referencia?: string;
   pagamento: string; troco?: string; obs?: string;

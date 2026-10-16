@@ -11,7 +11,7 @@ export function CartSheet() {
   const { linhas, aberto, setAberto, setQtd } = useCart();
   const tipos = ["Entrega", "Retirada", ...(negocio.servicos.consumoLocal ? ["Consumo no local"] : [])];
   const pags = [...negocio.pagamento, "Dinheiro", ...(negocio.aceitaPix ? ["Pix"] : [])];
-  const [f, setF] = useState({ nome: "", tipo: "Retirada", endereco: "", bairro: "", referencia: "", pagamento: pags[0], troco: "", obs: "" });
+  const [f, setF] = useState({ nome: "", tipo: "Retirada", endereco: "", bairro: "", referencia: "", pagamento: pags[0] ?? "Cartão de crédito", troco: "", obs: "" });
   const [erro, setErro] = useState("");
   const sub = subtotal(linhas);
   const set = (k: string, v: string) => setF((p) => ({ ...p, [k]: v }));

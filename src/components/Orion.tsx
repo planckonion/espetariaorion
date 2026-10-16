@@ -16,7 +16,7 @@ export function Orion({ className = "", animado = true, mini = false }: { classN
       </defs>
       <g stroke="#E5C158" strokeWidth={mini ? 1 : 0.4} opacity={mini ? 0.8 : 0.55} fill="none">
         {L.map(([a, b], i) => (
-          <line key={i} x1={S[a][0]} y1={S[a][1]} x2={S[b][0]} y2={S[b][1]} pathLength={1}
+          <line key={i} x1={S[a]![0]} y1={S[a]![1]} x2={S[b]![0]} y2={S[b]![1]} pathLength={1}
             className={animado ? "orion-line" : ""} style={{ animationDelay: `${i * 0.12}s` }} />
         ))}
       </g>
