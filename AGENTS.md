@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Business and menu data live in src/data/negocio.ts and src/data/cardapio.ts; images resolve by name via src/lib/imagens.ts (glob + fallback) so missing photos never break the build.
