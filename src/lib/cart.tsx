@@ -19,7 +19,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   }, [linhas]);
   const add = (l: Linha) => setLinhas((p) => {
     const i = p.findIndex((x) => x.id === l.id && (x.obs ?? "") === (l.obs ?? ""));
-    if (i >= 0) { const n = [...p]; n[i] = { ...n[i], qtd: n[i].qtd + l.qtd }; return n; }
+    if (i >= 0) return p.map((x, j) => (j === i ? { ...x, qtd: x.qtd + l.qtd } : x));
     return [...p, l];
   });
   const setQtd = (i: number, q: number) => setLinhas((p) => q <= 0 ? p.filter((_, j) => j !== i) : p.map((x, j) => j === i ? { ...x, qtd: q } : x));

@@ -20,7 +20,7 @@ const norm = (s: string) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").t
 
 function Cardapio() {
   const [q, setQ] = useState("");
-  const [atual, setAtual] = useState(categorias[0].id);
+  const [atual, setAtual] = useState(categorias[0]!.id);
   const [sheet, setSheet] = useState(false);
   const [item, setItem] = useState<Item | null>(null);
 
